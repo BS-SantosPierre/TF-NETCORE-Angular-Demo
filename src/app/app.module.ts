@@ -10,6 +10,8 @@ import { InfoComponent } from './info/info.component';
 import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
 import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
 import { TemperaturePipe } from './pipes/temperature.pipe';
+import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { TemperaturePipe } from './pipes/temperature.pipe';
     InfoComponent,
     DemoPipesComponent,
     ToFahrenheitPipe,
-    TemperaturePipe
+    TemperaturePipe,
+    DemoDirectivesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+		FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
