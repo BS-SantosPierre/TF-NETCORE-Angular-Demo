@@ -12,6 +12,8 @@ import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
 import { TemperaturePipe } from './pipes/temperature.pipe';
 import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
 import { FormsModule } from '@angular/forms';
+import { ChronoComponent } from './chrono/chrono.component';
+import { ToTimePipe } from './pipes/to-time.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     DemoPipesComponent,
     ToFahrenheitPipe,
     TemperaturePipe,
-    DemoDirectivesComponent
+    DemoDirectivesComponent,
+    ChronoComponent,
+    ToTimePipe
   ],
   imports: [
     BrowserModule,
