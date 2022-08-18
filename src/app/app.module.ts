@@ -7,6 +7,9 @@ import { HelloAngularComponent } from './hello-angular/hello-angular.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { InfoComponent } from './info/info.component';
+import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
+import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
+import { TemperaturePipe } from './pipes/temperature.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { InfoComponent } from './info/info.component';
     HelloAngularComponent,
     AboutComponent,
     ContactComponent,
-    InfoComponent
+    InfoComponent,
+    DemoPipesComponent,
+    ToFahrenheitPipe,
+    TemperaturePipe
   ],
   imports: [
     BrowserModule,

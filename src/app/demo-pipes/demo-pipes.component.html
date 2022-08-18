@@ -1,0 +1,22 @@
+<h1>Demo Pipes</h1>
+
+<p>UpperCase : {{ message | uppercase }}</p>
+<p>LowerCase : {{ message | lowercase }}</p>
+<p>TitleCase : {{ message | titlecase }}</p>
+
+<p>Date de naissance: {{ birthDate }}</p>
+<p>Date de naissance: {{ birthDate | date: 'EEEE-MM-yyyy G' }}</p>
+
+<p>Prix: {{ price | currency:'EUR' }}</p>
+
+<hr>
+
+<h2>Pipes To Fahrenheit</h2>
+
+<p>{{ 50 | toFahrenheit:'hey':'ho' }}</p>
+
+<h2>Pipes Temperature</h2>
+
+<p>{{ 50 | temperature:'c'}}</p>
+
+<p>{{ 50 | temperature:'f'}}</p>
