@@ -18,6 +18,8 @@ import { HighlightDirective } from './custom-directives/highlight.directive';
 import { AccordeonComponent } from './accordeon/accordeon.component';
 import { DemoDialogueComponent } from './demo-dialogue/demo-dialogue.component';
 import { EnfantDialogueComponent } from './demo-dialogue/enfant-dialogue/enfant-dialogue.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ViewListComponent } from './shopping-list/view-list/view-list.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { EnfantDialogueComponent } from './demo-dialogue/enfant-dialogue/enfant-
     HighlightDirective,
     AccordeonComponent,
     DemoDialogueComponent,
-    EnfantDialogueComponent
+    EnfantDialogueComponent,
+    ShoppingListComponent,
+    ViewListComponent
   ],
   imports: [
     BrowserModule,

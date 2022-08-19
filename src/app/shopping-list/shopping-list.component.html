@@ -1,0 +1,8 @@
+
+<div>
+    <h2>Exercice Shopping List Input/Ouput</h2>
+    <div><input type="text" [(ngModel)]="nouveauProduit"> <button (click)="ajouter()">Ajouter</button></div>
+
+    <h3>Ma liste de courses</h3>
+    <app-view-list [listAAfficher]="shoppingList" (supprimer)="delete($event)"  ></app-view-list>
+</div>
