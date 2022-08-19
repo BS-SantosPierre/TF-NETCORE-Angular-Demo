@@ -20,6 +20,7 @@ import { DemoDialogueComponent } from './demo-dialogue/demo-dialogue.component';
 import { EnfantDialogueComponent } from './demo-dialogue/enfant-dialogue/enfant-dialogue.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ViewListComponent } from './shopping-list/view-list/view-list.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ViewListComponent } from './shopping-list/view-list/view-list.component
     DemoDialogueComponent,
     EnfantDialogueComponent,
     ShoppingListComponent,
-    ViewListComponent
+    ViewListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
