@@ -14,6 +14,7 @@ import { DemoDirectivesComponent } from './demo-directives/demo-directives.compo
 import { FormsModule } from '@angular/forms';
 import { ChronoComponent } from './chrono/chrono.component';
 import { ToTimePipe } from './pipes/to-time.pipe';
+import { HighlightDirective } from './custom-directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ToTimePipe } from './pipes/to-time.pipe';
     TemperaturePipe,
     DemoDirectivesComponent,
     ChronoComponent,
-    ToTimePipe
+    ToTimePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
