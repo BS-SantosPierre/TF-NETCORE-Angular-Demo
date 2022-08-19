@@ -16,6 +16,8 @@ import { ChronoComponent } from './chrono/chrono.component';
 import { ToTimePipe } from './pipes/to-time.pipe';
 import { HighlightDirective } from './custom-directives/highlight.directive';
 import { AccordeonComponent } from './accordeon/accordeon.component';
+import { DemoDialogueComponent } from './demo-dialogue/demo-dialogue.component';
+import { EnfantDialogueComponent } from './demo-dialogue/enfant-dialogue/enfant-dialogue.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { AccordeonComponent } from './accordeon/accordeon.component';
     ChronoComponent,
     ToTimePipe,
     HighlightDirective,
-    AccordeonComponent
+    AccordeonComponent,
+    DemoDialogueComponent,
+    EnfantDialogueComponent
   ],
   imports: [
     BrowserModule,
