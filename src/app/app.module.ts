@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ChronoComponent } from './chrono/chrono.component';
 import { ToTimePipe } from './pipes/to-time.pipe';
 import { HighlightDirective } from './custom-directives/highlight.directive';
+import { AccordeonComponent } from './accordeon/accordeon.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HighlightDirective } from './custom-directives/highlight.directive';
     DemoDirectivesComponent,
     ChronoComponent,
     ToTimePipe,
-    HighlightDirective
+    HighlightDirective,
+    AccordeonComponent
   ],
   imports: [
     BrowserModule,

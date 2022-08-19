@@ -1,0 +1,11 @@
+<div>
+    <h2>Mes cours préférés</h2>
+    <div class="lescours">
+        <div *ngFor="let cours of mesCours; index as i">
+            <div class="titrecours" (click)="toggleDescription(i)"><span>{{cours.title}}</span>
+                 <span *ngIf="!cours.isActive">V</span><span *ngIf="cours.isActive">X</span>
+            </div>
+            <div *ngIf="cours.isActive" class="desccours">{{cours.description}}</div>
+        </div>
+    </div>
+</div>
