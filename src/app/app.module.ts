@@ -21,6 +21,7 @@ import { EnfantDialogueComponent } from './demo-dialogue/enfant-dialogue/enfant-
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ViewListComponent } from './shopping-list/view-list/view-list.component';
 import { LoginComponent } from './login/login.component';
+import { FruitListComponent } from './fruit-list/fruit-list.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { LoginComponent } from './login/login.component';
     EnfantDialogueComponent,
     ShoppingListComponent,
     ViewListComponent,
-    LoginComponent
+    LoginComponent,
+    FruitListComponent
   ],
   imports: [
     BrowserModule,

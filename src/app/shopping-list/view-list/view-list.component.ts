@@ -10,7 +10,7 @@ export class ViewListComponent implements OnInit {
   @Input() listAAfficher : string[] = [];
   @Output() supprimer : EventEmitter<number>;
 
-  constructor() { 
+  constructor() {
     this.supprimer = new EventEmitter<number>();
   }
 

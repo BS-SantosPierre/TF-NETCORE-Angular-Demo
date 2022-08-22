@@ -1,0 +1,11 @@
+<div>
+  <label for="fruit">ajouter fruit:</label>
+  <input type="text" id="fruit" [(ngModel)]="newFruit">
+  <button (click)="addFruit()">Add</button>
+</div>
+
+<ul>
+  <li *ngFor="let fruit of fruits">
+    {{ fruit.name }} <span (click)="deleteFruit(fruit.id)">X</span>
+  </li>
+</ul>
