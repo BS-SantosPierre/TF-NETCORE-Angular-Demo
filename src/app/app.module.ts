@@ -11,7 +11,7 @@ import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
 import { ToFahrenheitPipe } from './pipes/to-fahrenheit.pipe';
 import { TemperaturePipe } from './pipes/temperature.pipe';
 import { DemoDirectivesComponent } from './demo-directives/demo-directives.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChronoComponent } from './chrono/chrono.component';
 import { ToTimePipe } from './pipes/to-time.pipe';
 import { HighlightDirective } from './custom-directives/highlight.directive';
@@ -22,6 +22,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ViewListComponent } from './shopping-list/view-list/view-list.component';
 import { LoginComponent } from './login/login.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
+import { ReactiveFormDemoComponent } from './reactive-form-demo/reactive-form-demo.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +44,14 @@ import { FruitListComponent } from './fruit-list/fruit-list.component';
     ShoppingListComponent,
     ViewListComponent,
     LoginComponent,
-    FruitListComponent
+    FruitListComponent,
+    ReactiveFormDemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-		FormsModule
+		FormsModule,
+		ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

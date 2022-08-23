@@ -1,0 +1,69 @@
+<h1>Form Demo</h1>
+
+<h3>Form Control</h3>
+
+<div>
+	<label for="email">Email:</label>
+	<input type="email" id="email" [formControl]="newsletter">
+	<button (click)="newsletter.markAsUntouched()">Untouched</button>
+</div>
+
+{{ newsletter.value }}
+{{ newsletter.dirty }}
+
+<h3>Form Group</h3>
+
+<form [formGroup]="subscriptionForm" (ngSubmit)="handleSubmit()">
+	<div>
+		<label for="first-name">First Name:</label>
+		<input id="first-name" type="text" formControlName="firstName"/>
+	</div>
+
+	<div>
+		<label for="birth-date">Birth Date:</label>
+		<input id="birth-date" type="date" formControlName="birthDate"/>
+	</div>
+
+	<div formGroupName="address">
+		<h4>Address</h4>
+		<div>
+			<label for="street">Street:</label>
+			<input id="street" type="text" formControlName="street"/>
+		</div>
+		<div>
+			<label for="zip-code">Zip:</label>
+			<input id="zip-code" type="text" formControlName="zip"/>
+		</div>
+	</div>
+
+	<button type="submit" [disabled]="!subscriptionForm.valid">Submit</button>
+</form>
+
+{{ subscriptionForm.valid }}
+{{ subscriptionForm.value | json }}
+
+<h3>Form Builder</h3>
+
+<form [formGroup]="artistProfile">
+	<div>
+		<label for="name">Name:</label>
+		<input id="name" type="text" formControlName="name"/>
+		<p *ngIf="hasError(artistProfile, 'name', 'required')">Required Name</p>
+		<p *ngIf="hasError(artistProfile, 'name', 'minlength')">Min 3 characters</p>
+	</div>
+
+	<div formArrayName="genres">
+		<h2>Genres</h2>
+		<button type="button" (click)="addGenre()">Add Genre</button>
+
+		<div *ngFor="let genre of genres.controls; index as i">
+			<label for="genre-{{i}}">Genre: </label>
+			<input id="genre-{{i}}" type="text" [formControlName]="i">
+			<button (click)="removeGenre(i)">Remove</button>
+		</div>
+	</div>
+
+	<button type="submit" [disabled]="!artistProfile.valid">Submit</button>
+</form>
+
+{{ artistProfile.value | json }}
