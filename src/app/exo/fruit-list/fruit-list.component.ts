@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FruitService } from 'src/app/services/fruit.service';
 import { Fruit } from 'src/types';
-import { FruitService } from '../services/fruit.service';
 
 @Component({
   selector: 'app-fruit-list',

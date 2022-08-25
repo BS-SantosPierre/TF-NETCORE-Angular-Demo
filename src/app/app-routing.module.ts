@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { InfoComponent } from './info/info.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-	{path: 'about', component: AboutComponent, children: [
-		{path: 'info', component: InfoComponent}
-	]},
-	{path: 'contact', component: ContactComponent}
+	{
+		path: '', component: HomeComponent, pathMatch: 'full'
+	},
+	{
+		path: 'demos', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
+	},
+	{
+		path: 'exos', loadChildren: () => import('./exo/exo.module').then(m => m.ExoModule)
+	},
+	{
+		path: '**', component: NotFoundComponent
+	}
 ];
 
 @NgModule({

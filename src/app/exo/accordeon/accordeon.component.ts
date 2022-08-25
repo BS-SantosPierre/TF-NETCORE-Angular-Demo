@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cours } from '../models/cours';
+import { Cours } from 'src/app/models/cours';
 
 @Component({
   selector: 'app-accordeon',

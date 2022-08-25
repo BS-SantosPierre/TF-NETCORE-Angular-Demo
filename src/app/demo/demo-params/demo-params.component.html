@@ -1,0 +1,13 @@
+<h2>User List</h2>
+<ul>
+	<li *ngFor="let user of users">
+		<a [routerLink]="'/demos/params/'+user.id">
+			{{user.firstname}} - {{user.lastname}}
+		</a>
+		<!-- <a routerLink="{{user.id}}">
+			{{user.firstname}} - {{user.lastname}}
+		</a> -->
+	</li>
+</ul>
+
+<router-outlet></router-outlet>

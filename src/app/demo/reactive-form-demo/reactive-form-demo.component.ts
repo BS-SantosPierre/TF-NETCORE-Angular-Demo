@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { MinLengthValidator } from '../validators/MinLengthValidator';
+import { MinLengthValidator } from '../../validators/MinLengthValidator';
 
 @Component({
   selector: 'app-reactive-form-demo',

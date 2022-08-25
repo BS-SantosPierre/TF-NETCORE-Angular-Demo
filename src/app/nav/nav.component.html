@@ -1,0 +1,20 @@
+<nav class="nav">
+	<ul class="parent-nav">
+		<li *ngFor="let link of linkList; index as i;" class="text-lg nav-link-parent">
+			<a [routerLink]="link.url"
+				(click)="toggleVisible(i)"
+			>
+				{{link.title}}
+			</a>
+
+			<ul *ngIf="link.children?.length !== 0 && link.isVisible" class="sub-nav">
+				<li *ngFor="let subChildren of link.children">
+					<a [routerLink]="subChildren.url"
+					>
+						{{subChildren.title}}
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
