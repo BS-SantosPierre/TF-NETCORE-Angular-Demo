@@ -11,3 +11,9 @@ export type ShoppingItem = {
   // Price (Bonus)
   unitPrice: number;
 }
+
+export type ShoppingItemDTO = {
+  name: string;
+  isPromo: boolean;
+  unitPrice: number;
+}

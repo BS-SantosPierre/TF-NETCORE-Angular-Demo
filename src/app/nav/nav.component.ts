@@ -84,6 +84,10 @@ export class NavComponent implements OnInit {
             title: 'Shopping List',
             url: '/exos/shopping-list'
           },
+          {
+            title: 'Shopping List PLus',
+            url: '/exos/shopping-list-plus'
+          },
         ]
       }
     ]
