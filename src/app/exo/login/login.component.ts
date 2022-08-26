@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   constructor(private _loginService: LoginServiceService) { }
 
   ngOnInit(): void {
+    this.connectedUser = this._loginService.connectedUser;
   }
 
   connection(): void {

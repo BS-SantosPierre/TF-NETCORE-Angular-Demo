@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '../guards/auth.guard';
 import { AccordeonComponent } from './accordeon/accordeon.component';
 import { ChronoComponent } from './chrono/chrono.component';
 import { FruitListComponent } from './fruit-list/fruit-list.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
 	{path: 'chrono', component: ChronoComponent},
 	{path: 'fruit-list', component: FruitListComponent},
 	{path: 'login', component: LoginComponent},
-	{path: 'shopping-list', component: ShoppingListComponent},
+	{path: 'shopping-list', canActivate: [AuthGuard] , component: ShoppingListComponent},
 	{path: 'shopping-list-plus', component: ShoppingListPlusComponent},
 ];
 
