@@ -63,6 +63,10 @@ export class NavComponent implements OnInit {
 					{
             title: 'Todo Inline',
             url: '/demos/todo-inline'
+					},
+					{
+						title: 'Demo Http',
+            url: '/demos/demo-http'
 					}
         ]
       },
@@ -87,6 +91,10 @@ export class NavComponent implements OnInit {
 					{
             title: 'Shopping List',
             url: '/exos/shopping-list'
+          },
+          {
+            title: 'Shopping List PLus',
+            url: '/exos/shopping-list-plus'
           },
         ]
       }

@@ -1,0 +1,11 @@
+<p>demo-http works!</p>
+
+<ul *ngIf="users.length !== 0">
+  <li *ngFor="let user of users">
+    {{user.name}}
+  </li>
+</ul>
+
+<button (click)="addUser()">Add user</button>
+
+<p *ngIf="loading">Loading...</p>

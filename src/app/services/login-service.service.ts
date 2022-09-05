@@ -25,7 +25,7 @@ export class LoginServiceService {
       if(this.connectedUser.password !== connectPassword) {
         this.connectedUser = undefined;
       }
-
+      localStorage.setItem('user', JSON.stringify(this.connectedUser));
     }
     //Si le login n'est pas présent en bdd, l'utilisateur n'existe pas
     else {
@@ -34,6 +34,7 @@ export class LoginServiceService {
   }
 
   disconnect() : void {
+    localStorage.removeItem('user');
     this.connectedUser = undefined;
   }
 }

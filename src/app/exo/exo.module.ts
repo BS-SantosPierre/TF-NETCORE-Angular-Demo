@@ -10,6 +10,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { FormsModule } from '@angular/forms';
 import { ViewListComponent } from './shopping-list/view-list/view-list.component';
 import { ToTimePipe } from '../pipes/to-time.pipe';
+import { ShoppingListPlusComponent } from './shopping-list-plus/shopping-list-plus.component';
+import { ShoppingItemComponent } from './shopping-list-plus/shopping-item/shopping-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ToTimePipe } from '../pipes/to-time.pipe';
 		LoginComponent,
 		ShoppingListComponent,
 		ViewListComponent,
-		ToTimePipe
+		ToTimePipe,
+    ShoppingListPlusComponent,
+    ShoppingItemComponent
 	],
   imports: [
     CommonModule,

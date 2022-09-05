@@ -9,7 +9,7 @@ import { UsersService } from '../services/users.service';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
-export class UsersComponent implements OnInit, OnDestroy {
+export class UsersComponent implements OnInit, OnDestroy{
 	user!: User;
 	param!: string;
 	subscription!: Subscription;
@@ -41,7 +41,5 @@ export class UsersComponent implements OnInit, OnDestroy {
 			}
 		})
   }
-
-
 
 }

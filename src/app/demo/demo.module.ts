@@ -20,6 +20,8 @@ import { DemoParamsComponent } from './demo-params/demo-params.component';
 import { UsersComponent } from './demo-params/users/users.component';
 import { TodoInlineComponent } from './todo-inline/todo-inline.component';
 import { TodoItemComponent } from './todo-inline/todo-item/todo-item.component';
+import { DemoHttpComponent } from './demo-http/demo-http.component';
+import { UserDetailComponent } from './demo-http/user-detail/user-detail.component';
 
 
 @NgModule({
@@ -40,13 +42,15 @@ import { TodoItemComponent } from './todo-inline/todo-item/todo-item.component';
 		DemoParamsComponent,
 		UsersComponent,
   	TodoInlineComponent,
-   TodoItemComponent
+   	TodoItemComponent,
+		DemoHttpComponent,
+		UserDetailComponent
 	],
   imports: [
     CommonModule,
 		ReactiveFormsModule,
     DemoRoutingModule,
-		FormsModule
+		FormsModule,
   ],
 	exports: [
 		AboutComponent
