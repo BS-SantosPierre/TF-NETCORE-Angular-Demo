@@ -7,10 +7,10 @@ import { DemoDirectivesComponent } from './demo-directives/demo-directives.compo
 import { DemoParamsComponent } from './demo-params/demo-params.component';
 import { UsersComponent } from './demo-params/users/users.component';
 import { DemoPipesComponent } from './demo-pipes/demo-pipes.component';
-import { DemoComponent } from './demo.component';
 import { HelloAngularComponent } from './hello-angular/hello-angular.component';
 import { InfoComponent } from './info/info.component';
 import { ReactiveFormDemoComponent } from './reactive-form-demo/reactive-form-demo.component';
+import { TodoInlineComponent } from './todo-inline/todo-inline.component';
 
 const routes: Routes = [
 	// {path: '', component: DemoComponent},
@@ -22,6 +22,7 @@ const routes: Routes = [
 	{path: 'hello-angular', component: HelloAngularComponent},
 	{path: 'info', component: InfoComponent},
 	{path: 'forms', component: ReactiveFormDemoComponent},
+	{path: 'todo-inline', component: TodoInlineComponent},
 	{
 		path: 'params',
 			component: DemoParamsComponent,

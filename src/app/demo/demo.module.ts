@@ -18,6 +18,8 @@ import { DemoComponent } from './demo.component';
 import { Demo12Component } from './demo12/demo12.component';
 import { DemoParamsComponent } from './demo-params/demo-params.component';
 import { UsersComponent } from './demo-params/users/users.component';
+import { TodoInlineComponent } from './todo-inline/todo-inline.component';
+import { TodoItemComponent } from './todo-inline/todo-item/todo-item.component';
 
 
 @NgModule({
@@ -33,11 +35,13 @@ import { UsersComponent } from './demo-params/users/users.component';
 		ReactiveFormDemoComponent,
 		TemperaturePipe,
 		ToFahrenheitPipe,
-  DemoComponent,
-  Demo12Component,
-  DemoParamsComponent,
-  UsersComponent,
-		],
+		DemoComponent,
+		Demo12Component,
+		DemoParamsComponent,
+		UsersComponent,
+  	TodoInlineComponent,
+   TodoItemComponent
+	],
   imports: [
     CommonModule,
 		ReactiveFormsModule,

@@ -59,6 +59,10 @@ export class NavComponent implements OnInit {
 					{
             title: 'Demo Params',
             url: '/demos/params'
+					},
+					{
+            title: 'Todo Inline',
+            url: '/demos/todo-inline'
 					}
         ]
       },
